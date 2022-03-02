@@ -61,13 +61,32 @@ let responses = [
 	'My reply is no.',
 	'My sources say no.',
 	'Outlook not so good.',
-	'Very doubtful.'
+	'Very doubtful.',
+	'42.',
+	'I think you already know the answer to that.',
+	'Don\'t bother.', 
+	'Probably. But don\'t let that stop you.',
+	'What are you waiting for?',
+	'Are you insane? NO.',
+	'Get a grip, you moron.',
+	'That\'s a lovely idea, dear.',
+	'That might be the case, yes.',
+	'You\'re probably just hungry. Eat a Snickers.',
+	'You might want to sleep on that.',
+	'Be nice to yourself. Or else.',
+	'You might want to reconsider.',
+	'The crow with three eyes says yes. You better hurry.',
+	'The future is meaningless but the pasta is now.'
 ];
 
 let loading = [
 	'Consulting the spirits...',
 	'Gazing into the depths of the future...',
 	'BRB, jumping into my time machine...',
-	'I see... I see...'
+	'I see... I see...',
+	'Polishing my crystal ball, one sec...',
+	'Adjusting the ouija board...', 
+	'*Chanting begins*',
+	'Shuffling the tarot cards...'
 ];
 
