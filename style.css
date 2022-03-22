@@ -16,9 +16,14 @@ body {
           justify-content: center;
   background-image: url(https://images.unsplash.com/photo-1601046296534-4a5da114f78f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1793&q=80);
   background-color: black;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: brightness(60%);
+          backdrop-filter: brightness(60%);
   -o-object-position: 100% 15%;
      object-position: 100% 15%;
   height: 653px;
+  z-index: 0;
 }
 
 main .wrapper {
@@ -32,13 +37,11 @@ main .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: brightness(30%);
-          backdrop-filter: brightness(30%);
+  background: rgba(0, 0, 0, 0.6);
   height: 25rem;
   width: 20rem;
   border-radius: 10px;
+  z-index: 1;
 }
 
 h1 {
