@@ -5,15 +5,13 @@ let timeout;
 
 function getFortune(){
     let randomMsg = shuffle(Array.from(loading));
-    fortuneDisplay.innerHTML = randomMsg[0];
-    fortuneDisplay.style.fontStyle = "italic";
+    fortuneDisplay.innerHTML = `<p class="loading-p">${randomMsg[0]}</p>`;
 
     clearTimeout(timeout);
 
     timeout = setTimeout(function(){
         let yourFortune = shuffle(Array.from(responses));//create copy to not mutate the original array
-        fortuneDisplay.textContent = yourFortune[0];
-        fortuneDisplay.style.fontStyle = "normal";
+		fortuneDisplay.innerHTML = `<p class="fortune-p">${yourFortune[0]}</p>`
     }, 2000);
 }
 
@@ -41,7 +39,7 @@ function shuffle (array) {
 fortuneBtn.addEventListener("click", getFortune);
 
 // The fortune responses
-let responses = [
+const responses = [
 	'It is certain.',
 	'It is decidedly so.',
 	'Without a doubt.',
@@ -67,7 +65,7 @@ let responses = [
 	'Don\'t bother.', 
 	'Probably. But don\'t let that stop you.',
 	'What are you waiting for?',
-	'Are you insane? NO.',
+	'Are you insane?',
 	'Get a grip, you moron.',
 	'That\'s a lovely idea, dear.',
 	'That might be the case, yes.',
@@ -76,10 +74,15 @@ let responses = [
 	'Be nice to yourself. Or else.',
 	'You might want to reconsider.',
 	'The crow with three eyes says yes. You better hurry.',
-	'The future is meaningless but the pasta is now.'
+	'The future is meaningless but the pasta is now.',
+	'Oh for fucks sake.',
+	'This too shall pass.',
+	'Let it go.',
+	'It\'s never too late to give up.',
+	'I have no idea how to answer that. Sorry.'
 ];
 
-let loading = [
+const loading = [
 	'Consulting the spirits...',
 	'Gazing into the depths of the future...',
 	'BRB, jumping into my time machine...',
@@ -87,6 +90,9 @@ let loading = [
 	'Polishing my crystal ball, one sec...',
 	'Adjusting the ouija board...', 
 	'*Chanting begins*',
-	'Shuffling the tarot cards...'
+	'Shuffling the tarot cards...', 
+	'Reading my tea leaves...', 
+	'Tossing the coin...',
+	'Calculating possibilities...'
 ];
 
